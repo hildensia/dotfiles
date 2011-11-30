@@ -1,0 +1,1767 @@
+# Diese viminfo-Datei wurde von Vim 7.3 generiert.
+# Sie können sie verändern, wenn Sie vorsichtig vorgehen!
+
+# Wert von 'encoding', als diese Datei geschrieben wurde
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Letztes Suchmuster:
+~MSle0~/history
+
+# Letztes Substitute Suchmuster:
+~MSle0&alsawidget
+
+# Letzte ersetzte Zeichenkette:
+$
+
+# Befehlszeile Geschichte (neueste bis älteste):
+:q
+:w
+:q!
+:wq
+:W
+:e src/slam.cpp
+:e src/motions/motion_walker_parallel_mechanics.cpp
+:q1
+:Q
+:tabnew src/motions/motion_static.cpp
+:e! src/robot.cpp
+:e src/robot.cpp
+:set omnifunc?
+:Q!
+:tag robot
+:tag
+:help tags
+:set tags=tags
+:tags tags
+:source ~/.vimrc
+:e ~/.vimrc
+:set filetype?
+:e! src/slam.cpp
+:w! src/slam.cpp
+:w src/slam.cpp
+:w slam.cpp
+:e! src/test.cpp
+:e src/test.cpp
+:h omnicppcomplete
+:tabnew src/motions/motion_walker_parallel_mechanics.cpp
+:e ~/.xinitrc
+:w calendar2.lua
+:u
+:kj
+:w!
+:wq!
+:%s/alsawidget/mutewidget/g
+:Wq
+:e /etc/X11/xorg.conf.d/10-evdev.conf
+:tabnew .config/awesome/calendar2.lua
+
+# Suchausdruck Geschichte (neueste bis älteste):
+?/history
+?/bat
+?/register
+?/volwi
+? {
+?/Excep
+?/omni
+?/Omni
+?/getCon
+?/Slam
+?/Exce
+?/python
+?/ruby
+?/move
+?/Nikon D90
+?/\\e
+?/\e
+?/end-of-line
+?/end-of
+?/hhh
+? \.
+?/begin
+?/TERM
+?/bindkey
+?/lv3
+?/Alt
+?/alt
+?/option
+?/macbook
+?/margins
+?/layout
+?/vol
+?/wibox
+?/mute
+? alsawidget
+?/%s/alsawidget/mutewidget/g
+?/alsa
+?/Alsa
+?/Raise
+?/key
+?/widget
+?/obvious
+?/volume_als
+?/awful.key
+?/timer
+?/regist
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+? alsawidget
+
+# Ausdruck Geschichte (neueste bis älteste):
+
+# Eingabe-Zeile Geschichte (neueste bis älteste):
+
+# Eingabe-Zeile Geschichte (neueste bis älteste):
+
+# Register:
+"0	LINE	0
+	volwidget:set_width(20)
+	volwidget:set_height(10)
+	volwidget:set_background_color("#494B4F")
+	volwidget:set_border_color(nil)
+	volwidget:set_color("#AECF96")
+	volwidget:set_gradient_colors({ "#AECF96", "#88A175", "#FF5656" })
+	awful.widget.layout.margins[volwidget.widget] = { top = 4 }
+	vicious.register(volwidget, vicious.widgets.volume, "$1", 1, "Master")
+""1	CHAR	0
+	, 
+"2	CHAR	0
+	4
+"3	CHAR	0
+	= 
+"4	CHAR	0
+	left 
+"5	CHAR	0
+	awesome
+"6	CHAR	0
+	/
+"7	LINE	0
+	
+"8	CHAR	0
+	 
+"9	LINE	0
+	end
+"a	CHAR	0
+	
+"j	CHAR	0
+	j
+"-	CHAR	0
+	emulator
+
+# globale Variablen:
+
+# Datei-Marken:
+'0  106  20  ~/.zshrc
+'1  1  0  /tmp/yaourt-tmp-johannes/aur-ann/PKGBUILD
+'2  97  68  ~/.config/awesome/rc.lua
+'3  98  52  ~/.config/awesome/rc.lua
+'4  53  0  /usr/share/awesome/lib/vicious/widgets/bat.lua
+'5  212  9  /usr/share/awesome/lib/vicious/init.lua
+'6  16  0  /usr/share/awesome/lib/vicious/widgets/bat.lua
+'7  178  8  ~/.config/awesome/rc.lua
+'8  215  17  ~/.config/awesome/rc.lua
+'9  1  0  /tmp/yaourt-tmp-johannes/aur-backintime/PKGBUILD
+
+# Geschichte (neueste zuerst):
+-'  106  20  ~/.zshrc
+-'  87  35  ~/.zshrc
+-'  86  41  ~/.zshrc
+-'  79  48  ~/.zshrc
+-'  60  21  ~/.zshrc
+-'  59  21  ~/.zshrc
+-'  124  18  ~/.zshrc
+-'  110  15  ~/.zshrc
+-'  109  15  ~/.zshrc
+-'  107  21  ~/.zshrc
+-'  2  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  0  /tmp/yaourt-tmp-johannes/aur-ann/PKGBUILD
+-'  97  68  ~/.config/awesome/rc.lua
+-'  101  62  ~/.config/awesome/rc.lua
+-'  100  0  ~/.config/awesome/rc.lua
+-'  98  44  ~/.config/awesome/rc.lua
+-'  96  0  ~/.config/awesome/rc.lua
+-'  95  0  ~/.config/awesome/rc.lua
+-'  94  0  ~/.config/awesome/rc.lua
+-'  93  0  ~/.config/awesome/rc.lua
+-'  92  0  ~/.config/awesome/rc.lua
+-'  91  0  ~/.config/awesome/rc.lua
+-'  90  0  ~/.config/awesome/rc.lua
+-'  192  8  ~/.config/awesome/rc.lua
+-'  154  52  ~/.config/awesome/rc.lua
+-'  102  0  ~/.config/awesome/rc.lua
+-'  35  0  ~/.config/awesome/rc.lua
+-'  1  0  ~/.config/awesome/rc.lua
+-'  53  0  /usr/share/awesome/lib/vicious/widgets/bat.lua
+-'  1  0  /usr/share/awesome/lib/vicious/widgets/bat.lua
+-'  212  9  /usr/share/awesome/lib/vicious/init.lua
+-'  113  29  /usr/share/awesome/lib/vicious/init.lua
+-'  97  30  /usr/share/awesome/lib/vicious/init.lua
+-'  93  25  /usr/share/awesome/lib/vicious/init.lua
+-'  92  12  /usr/share/awesome/lib/vicious/init.lua
+-'  91  11  /usr/share/awesome/lib/vicious/init.lua
+-'  89  18  /usr/share/awesome/lib/vicious/init.lua
+-'  39  26  /usr/share/awesome/lib/vicious/init.lua
+-'  31  0  /usr/share/awesome/lib/vicious/init.lua
+-'  1  0  /usr/share/awesome/lib/vicious/init.lua
+-'  16  0  /usr/share/awesome/lib/vicious/widgets/bat.lua
+-'  178  8  ~/.config/awesome/rc.lua
+-'  136  52  ~/.config/awesome/rc.lua
+-'  81  23  ~/.config/awesome/rc.lua
+-'  215  17  ~/.config/awesome/rc.lua
+-'  1  0  /tmp/yaourt-tmp-johannes/aur-backintime/PKGBUILD
+-'  1  0  /tmp/yaourt-tmp-johannes/aur-jre/jre.install
+-'  1  29  /etc/profile.d/jre7.sh
+-'  1  0  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  28  61  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  27  56  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  47  23  ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_walker_parallel_mechanics.cpp
+-'  182  0  ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_walker_parallel_mechanics.cpp
+-'  184  35  ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_walker_parallel_mechanics.cpp
+-'  71  1  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  43  49  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  17  20  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  38  0  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  1  0  ~/Documents/ki/fumanoid/ellipse.m
+-'  5  0  ~/Documents/ki/fumanoid/calibration/Makefile
+-'  1  0  ~/Documents/ki/fumanoid/calibration/Makefile
+-'  1  0  ~/Documents/ki/fumanoid/calibration/compile.sh
+-'  1  17  ~/.xinitrc
+-'  86  42  ~/Documents/ki/fumanoid/fumanoid/premake4.lua
+-'  1  0  ~/Documents/ki/fumanoid/fumanoid/premake4.lua
+-'  13  0  ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_static.cpp
+-'  31  28  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  52  0  ~/Documents/ki/fumanoid/fumanoid/src/robot.cpp
+-'  72  0  ~/Documents/ki/fumanoid/fumanoid/src/robot.cpp
+-'  73  0  ~/Documents/ki/fumanoid/fumanoid/src/robot.cpp
+-'  74  0  ~/Documents/ki/fumanoid/fumanoid/src/robot.cpp
+-'  32  14  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  33  15  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  432  0  ~/.vimrc
+-'  29  4  ~/Documents/ki/fumanoid/fumanoid/src/test.cpp
+-'  36  30  ~/Documents/ki/fumanoid/fumanoid/src/test.cpp
+-'  21  4  ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+-'  64  23  ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_walker_parallel_mechanics.cpp
+-'  35  0  ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_walker_parallel_mechanics.cpp
+
+# Liste der Puffer:
+%~/.zshrc	106	20
+
+# Geschichte der Markierungen innerhalb von Dateien (neueste zuerst):
+
+> ~/.zshrc
+	"	106	20
+	^	124	9
+	.	124	8
+	+	97	19
+	+	94	7
+	+	95	7
+	+	97	7
+	+	96	7
+	+	94	14
+	+	95	14
+	+	96	14
+	+	97	9
+	+	94	9
+	+	95	9
+	+	96	9
+	+	106	43
+	+	11	0
+	+	12	39
+	+	106	0
+	+	107	0
+	+	12	0
+	+	124	0
+	+	95	8
+	+	94	12
+	+	96	12
+	+	97	8
+	+	96	8
+	+	94	10
+	+	95	10
+	+	124	8
+
+> /tmp/yaourt-tmp-johannes/aur-ann/PKGBUILD
+	"	1	0
+
+> ~/.config/awesome/rc.lua
+	"	97	68
+	^	97	69
+	.	97	68
+	+	98	51
+	+	104	0
+	+	102	0
+	+	98	0
+	+	98	27
+	+	98	13
+	+	98	16
+	+	98	26
+	+	98	0
+	+	98	35
+	+	98	59
+	+	98	53
+	+	98	49
+	+	98	62
+	+	118	15
+	+	117	16
+	+	118	0
+	+	98	145
+	+	98	49
+	+	98	69
+	+	98	49
+	+	98	49
+	+	98	49
+	+	98	52
+	+	98	53
+	+	98	52
+	+	98	63
+	+	98	142
+	+	98	60
+	+	98	49
+	+	98	64
+	+	98	49
+	+	98	50
+	+	98	50
+	+	98	51
+	+	98	52
+	+	98	53
+	+	98	54
+	+	98	55
+	+	98	56
+	+	98	54
+	+	98	54
+	+	98	49
+	+	98	49
+	+	98	49
+	+	98	49
+	+	98	49
+	+	98	51
+	+	98	52
+	+	98	53
+	+	98	54
+	+	98	55
+	+	98	53
+	+	98	64
+	+	98	49
+	+	98	62
+	+	98	54
+	+	98	58
+	+	98	65
+	+	98	66
+	+	98	66
+	+	98	58
+	+	98	58
+	+	98	58
+	+	98	54
+	+	98	64
+	+	98	55
+	+	98	57
+	+	98	64
+	+	98	65
+	+	98	65
+	+	98	57
+	+	98	57
+	+	98	57
+	+	98	55
+	+	98	62
+	+	98	68
+	+	98	134
+	+	98	49
+	+	98	138
+	+	98	149
+	+	98	61
+	+	98	134
+	+	98	141
+	+	98	75
+	+	98	57
+	+	98	60
+	+	98	64
+	+	98	61
+	+	98	81
+	+	98	49
+	+	98	65
+	+	99	0
+	+	102	0
+	+	102	0
+	+	100	2
+	+	101	68
+	+	193	15
+	+	101	54
+	+	97	68
+
+> /usr/share/awesome/lib/vicious/widgets/bat.lua
+	"	53	0
+
+> ~/.config/awesome/calendar2.lua
+	"	90	0
+	.	1	0
+	+	2	0
+	+	1	0
+
+> /usr/share/awesome/lib/vicious/init.lua
+	"	212	9
+
+> /tmp/yaourt-tmp-johannes/aur-backintime/PKGBUILD
+	"	1	0
+
+> /tmp/yaourt-tmp-johannes/aur-jre/jre.install
+	"	1	0
+
+> /etc/profile.d/jre7.sh
+	"	1	29
+	^	1	30
+	.	1	29
+	+	1	29
+
+> ~/Documents/ki/fumanoid/fumanoid/src/slam.cpp
+	"	28	61
+	^	34	16
+	.	28	61
+	+	23	0
+	+	33	22
+	+	33	15
+	+	32	15
+	+	1	0
+	+	31	15
+	+	1	0
+	+	31	46
+	+	31	0
+	+	24	39
+	+	31	37
+	+	13	33
+	+	31	65
+	+	38	0
+	+	18	0
+	+	47	32
+	+	47	0
+	+	44	26
+	+	46	25
+	+	74	62
+	+	30	11
+	+	34	15
+	+	21	27
+	+	28	61
+
+> ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_walker_parallel_mechanics.cpp
+	"	47	23
+	^	200	3
+	.	35	44
+	+	184	0
+	+	199	3
+	+	200	3
+	+	35	44
+
+> ~/Documents/ki/fumanoid/ellipse.m
+	"	1	0
+
+> ~/Documents/ki/fumanoid/calibration/Makefile
+	"	5	0
+
+> ~/Documents/ki/fumanoid/calibration/compile.sh
+	"	1	0
+
+> ~/.xinitrc
+	"	1	17
+	^	1	18
+	.	1	17
+	+	1	30
+	+	10	0
+	+	1	24
+	+	8	0
+	+	1	18
+	+	4	0
+	+	3	8
+	+	7	34
+	+	5	21
+	+	1	17
+
+> ~/Documents/ki/fumanoid/fumanoid/premake4.lua
+	"	86	42
+	^	133	87
+	.	86	42
+	+	53	44
+	+	49	19
+	+	86	42
+	+	49	19
+	+	119	86
+	+	133	86
+	+	119	86
+	+	133	86
+	+	86	42
+
+> ~/Documents/ki/fumanoid/fumanoid/src/motions/motion_static.cpp
+	"	13	0
+
+> ~/Documents/ki/fumanoid/fumanoid/src/robot.cpp
+	"	52	0
+
+> /usr/share/vim/vim73/doc/tagsrch.txt
+	"	90	62
+
+> /usr/share/vim/vimfiles/doc/omnicppcomplete.txt
+	"	247	0
+
+> ~/Documents/ki/fumanoid/fumanoid/src/test.cpp
+	"	29	4
+	^	27	20
+	.	27	19
+	+	37	38
+	+	20	9
+	+	37	75
+	+	1	0
+	+	37	72
+	+	16	88
+	+	33	0
+	+	23	68
+	+	25	22
+	+	32	7
+	+	29	18
+	+	29	0
+	+	29	18
+	+	29	18
+	+	31	0
+	+	27	34
+	+	27	35
+	+	36	30
+	+	27	19
+
+> ~/.vimrc
+	"	432	0
+	^	432	0
+	.	412	0
+	+	412	0
+
+> ~/Documents/ki/fumanoid/fumanoid/.git/COMMIT_EDITMSG
+	"	5	51
+	^	5	52
+	.	5	51
+	+	1	26
+	+	9	0
+	+	11	75
+	+	1	41
+	+	7	47
+	+	5	51
+
+> /tmp/yaourt-tmp-johannes/aur-foo2zjs/foo2zjs.install
+	"	1	0
+
+> /tmp/yaourt-tmp-johannes/aur-foo2zjs/PKGBUILD
+	"	21	1
+	^	17	42
+	.	21	0
+	+	1	0
+	+	17	0
+	+	16	49
+	+	18	0
+	+	17	10
+	+	31	0
+	+	17	41
+	+	21	0
+
+> ~/Documents/ki/fumanoid/fumanoid/bin/install_dependencies.sh
+	"	69	60
+	^	69	61
+	.	69	60
+	+	60	79
+	+	60	0
+	+	59	0
+	+	61	23
+	+	62	31
+	+	63	56
+	+	67	80
+	+	71	0
+	+	68	73
+	+	69	49
+	+	70	7
+	+	66	7
+	+	69	60
+
+> ~/Documents/ki/fumanoid/fumanoid/archlinux.patch
+	"	1	0
+
+> /tmp/yaourt-tmp-johannes/aur-foomatic-db-foo2zjs/PKGBUILD
+	"	1	0
+
+> ~/.gitconfig
+	"	6	30
+	^	6	31
+	.	6	30
+	+	5	25
+	+	6	30
+
+> ~/gitconfig.stefan
+	"	68	0
+
+> ~/Documents/ki/fumanoid/fumanoid/.git/config
+	"	8	44
+	^	8	45
+	.	8	44
+	+	8	44
+
+> ~/Documents/ki/fumanoid/fumanoid/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/ki/fumanoid/fumanoid/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/ki/fumanoid/fumanoid/premake_robot2011.lua
+	"	1	0
+
+> ~/Documents/ki/fumanoid/fumanoid/FUmanoid.make
+	"	41	0
+
+> ~/Documents/ki/fumanoid/fumanoid/Makefile
+	"	1	0
+
+> ~/Documents/ki/fumanoid/fumanoid/premake_desktop.lua
+	"	1	0
+
+> ~/Documents/ki/fumanoid/fumanoid/bin/compile.sh
+	"	103	0
+
+> ~/Documents/ki/fumanoid/fumanoid/bin/compile_robot.sh
+	"	1	0
+
+> ~/Documents/ki/fumanoid/symposium2012-paper/main.tex
+	"	12	0
+	^	4	64
+	.	22	0
+	+	4	74
+	+	14	0
+	+	31	0
+	+	32	0
+	+	37	0
+	+	4	24
+	+	22	0
+	+	23	0
+	+	27	26
+	+	28	0
+	+	27	52
+	+	29	52
+	+	31	0
+	+	8	0
+	+	6	0
+	+	7	0
+	+	35	0
+	+	31	0
+	+	23	31
+	+	31	9
+	+	21	0
+	+	4	63
+	+	22	0
+
+> /etc/slim.conf
+	"	71	27
+	^	71	28
+	.	71	27
+	+	71	27
+
+> /usr/share/hal/fdi/information/20thirdparty/10-camera-libgphoto2.fdi
+	"	1	0
+
+> ~/.Xresources
+	"	68	0
+	^	85	23
+	.	85	22
+	+	83	0
+	+	79	1
+	+	85	22
+
+> ~/Downloads/solarized/xresources-colors-solarized/Xresources
+	"	77	0
+
+> /etc/rc.conf
+	"	1	0
+	^	1	0
+	.	1	0
+	+	123	40
+	+	1	0
+
+> ~/.zsh/zsh-history-substring-search.zsh
+	"	67	0
+
+> ~/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/NERD_tree_2
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/ki/fumanoid/coderelease/LICENCE
+	"	1	6
+	^	35	9
+	.	35	8
+	+	42	64
+	+	3	27
+	+	4	57
+	+	18	56
+	+	19	24
+	+	31	37
+	+	35	8
+
+> ~/Documents/ki/fumanoid/coderelease/README
+	"	169	35
+	^	169	36
+	.	166	78
+	+	158	25
+	+	162	77
+	+	164	61
+	+	166	60
+	+	164	93
+	+	166	77
+	+	172	0
+	+	166	0
+	+	164	25
+	+	166	78
+
+> ~/Documents/ki/fumanoid/coderelease/Makefile
+	"	1	0
+
+> /etc/X11/xorg.conf.d/10-evdev.conf
+	"	1	0
+	^	19	4
+	.	19	3
+	+	19	3
+
+> /usr/share/X11/xkb/rules/evdev.lst
+	"	701	2
+
+> /usr/share/X11/xkb/rules/evdev
+	"	160	2
+
+> /usr/share/awesome/lib/vicious/widgets/volume.lua
+	"	1	0
+
+> /usr/share/awesome/lib/vicious/helpers.lua
+	"	1	0
+
+> /usr/share/awesome/lib/awful/widget/layout/vertical.lua
+	"	12	0
+
+> /usr/share/awesome/lib/awful/widget/layout/default.lua
+	"	1	0
+
+> /usr/share/awesome/lib/awful/widget/layout/horizontal.lua
+	"	188	0
+
+> /usr/share/awesome/lib/obvious/volume_alsa/init.lua
+	"	8	0
+
+> /usr/share/awesome/lib/obvious/volume_alsa/readme
+	"	3	0
+
+> ~/.mpdconf
+	"	1	23
+	^	1	24
+	.	1	23
+	+	1	0
+	+	6	0
+	+	5	40
+	+	6	0
+	+	3	0
+	+	1	0
+	+	1	0
+	+	6	0
+	+	1	23
+
+> /etc/X11/xorg.conf.d/10-synaptics.conf
+	"	1	0
+
+> /etc/NetworkManager/system-connections/FUnkLAN
+	"	1	0
+
+> /etc/netconfig
+	"	1	0
+
+> /etc/X11/xorg.conf.d/11-fonts.conf
+	"	13	9
+	^	13	10
+	.	13	0
+	+	13	0
+
+> /etc/X11/xorg.conf.d/10-quirks.conf
+	"	1	0
+
+> ~/.autorandr/athome/config
+	"	7	0
+	.	7	0
+	+	10	0
+	+	9	0
+	+	7	0
+
+> /tmp/yaourt-tmp-johannes/aur-autorandr-git/PKGBUILD
+	"	17	0
+
+> ~/.screenlayout/athome.sh
+	"	2	148
+	^	2	149
+	.	2	148
+	+	2	148
+
+> /root/yaourt/.Xsession
+	"	1	0
+	^	1	12
+	.	1	11
+	+	1	11

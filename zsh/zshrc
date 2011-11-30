@@ -1,0 +1,125 @@
+export EDITOR=vi
+unalias run-help
+autoload run-help
+HELPDIR=~/zsh_help
+zmodload zsh/complist
+zmodload zsh/computil
+#zmodload zsh/files
+zmodload zsh/mathfunc
+autoload compinit
+compinit
+
+setopt listpacked
+#setopt  autocorrect
+setopt  auto_cd
+zstyle ':completion:*:*:cd:*' tag-order local-directories
+zstyle ':completion:*:*:lp*:*' tag-order jobs
+zstyle ':completion:*:*:(kill|wait):*' tag-order 'jobs processes'
+zstyle ':completion:*:*:(kill|wait):*' group-order jobs
+zstyle ':completion:*:*' users-hosts \
+       foo@bar.com \
+       baz@foobar.net
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*:match:*' original yes
+zstyle ':completion:incremental:*' list yes
+zstyle ':completion:incremental:*' prompt 'incremental (%c): %u%s%a  %l'
+zstyle ':completion:*:oldlist:*' menu verbose
+zstyle ':completion:predict:*' completer _complete
+zstyle ':completion:predict:*' list always
+zstyle ':completion:predict:*' cursor key
+zstyle ':completion:predict:*' special-dirs yes
+zstyle ':completion:*:default' menu select
+zstyle ':completion:*:(correct|approximate):*' max-errors 2 numeric
+zstyle ':completion:*:(correct|approximate)-*:*' original yes
+zstyle ':completion:*:paths' expand prefix
+zstyle ':completion:*:option(-*|s)' auto-description 'specify %d'
+zstyle ':completion:*:processes' command ps --forest -u $EUID -o pid,cmd
+zstyle ':completion:*' verbose yes
+zstyle ':completion:*' prefix-needed yes
+zstyle ':completion:*' prefix-hidden no
+zstyle ':completion:*' last-prompt yes
+zstyle ':completion:*' users foo baz root
+zstyle ':completion:*:complete:*:(all-|)files' ignored-patterns \
+      '?*~' '?*.(o|log|aux|elc|reg|pro|md[dh]|mdh[is]|syms|epro)' '(|*/)CVS'
+zstyle ':completion:*:complete:*:(local|path)-directories' ignored-patterns '(|*/)CVS'
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:jobs' prefix-needed no
+#zstyle ':completion:*' ignore-parents pwd parent
+zstyle ':completion:*:complete:*:(functions|parameters|association-keys)' ignored-patterns '_*'
+zstyle ':completion:::::' completer _complete _match _ignored _correct _approximate _prefix
+zstyle ':completion:*' matcher-list '' 'm:{a-z-}={A-Z_} r:|[-_./]=* r:|=*' 'm:{a-z-}={A-Z_} l:|=* r:|=*'
+zstyle ':completion:*:*:diff:*:version' command =diff -v
+zstyle ':completion:*:*:(p|gview|xdvi|kill|psnup):*' menu yes select
+zstyle ':completion:*:*:(p|gview|xdvi|psnup):*' file-sort time
+zstyle ':completion:*:default' list-prompt 'Line %l  Continue?                                                                       %b'
+zstyle ':completion:*:default' select-prompt 'Match %m  Line %l  %p                                                                                  %b'
+zstyle ':completion:*:(cp|mv|rm):*' ignore-line yes
+zstyle ':completion:*:kill:*' force-list always
+zstyle ':completion:*:*:*make:*:targets' command awk \''/^[a-zA-Z0-9][^\/\t=]+:/ {print $1}'\' \$file
+zstyle ':completion:*history*' remove-all-dups yes
+zstyle ':completion:*history*' stop yes
+zstyle ':completion:*:default' list-colors 'tc=35' 'ma=41;37' 'st=43;36' 'di=31;1' 'ex=33;1' \
+                                           'ln=32' '*CVS=35' '*rej=31;1' '*orig=35'
+zstyle ':completion:*:processes' list-colors \
+       '=(#b)( #[0-9]#)[^[/0-9a-zA-Z]#(*)=34=37;1=30;1'
+zstyle ':completion:*:parameters' list-colors '=_*=33' '=[^a-zA-Z]*=31'
+zstyle ':completion:*:functions' list-colors '=_*=33' '=*-*=31'
+zstyle ':completion:*:original' list-colors '=*=31;1'
+zstyle ':completion:*:all-expansions' list-colors '=*=32'
+zstyle ':completion:*:reserved-words' list-colors '=*=31'
+zstyle ':completion:*:(jobs|directory-stack|indexes)' list-colors \
+       '=(#b)(*) -- (*)=35;1=31;1=33;1'
+zstyle ':completion:*:(options|values)' list-colors \
+       '=(#b)(*)-- (*)=35;1=31;1=33;1' '=*=31;1'
+zstyle ':completion:*::lp*:jobs' list-colors '=(#b)* [0-9] ##([^    ]##) ##([^  ]##) ##([^  ]##) ##(*)=35=32=31;1=33;1=32'                                                              
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
+bindkey -v # use vi keybindings
+bindkey -M menuselect '/' accept-and-infer-next-history \
+                      '^U' undo \
+                      '^@' accept-and-menu-complete \
+                      '^A' .beginning-of-line-hist \
+                      '^E' .end-of-line-hist \
+                      '^P' vi-forward-blank-word \
+                      '^N' vi-backward-blank-word \
+                      '\e<' beginning-of-history \
+                      '\e>' end-of-history
+bindkey '^[[3~' delete-char
+bindkey '^Y'	backward-delete-word
+bindkey '^[[8~' end-of-line
+bindkey '^[[4~' end-of-line
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[7~' beginning-of-line
+bindkey '\eOH' beginning-of-line
+bindkey '\eOF' end-of-line
+bindkey '^[H' beginning-of-line
+bindkey '^[F' end-of-line
+bindkey '^[[5~' backward-word
+bindkey '^[[6~' forward-word
+bindkey '^[[2~' overwrite-mode
+bindkey '^[1'	undo
+bindkey '^[2'	redo
+bindkey '^[b'	beep
+bindkey '^[c'	transpose-words
+bindkey '^[y'	transpose-chars
+#bindkey '^[[a'	zsh-history-substring-search #history-search-backward #up-history
+#bindkey '^[[b'	down-history
+bindkey '^[s'	copy-prev-shell-word
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
+
+# zgitinit and prompt_wunjo_setup must be somewhere in your $fpath, see README for more.
+
+setopt promptsubst
+
+# Load the prompt theme system
+autoload -U promptinit
+promptinit
+
+# Use the wunjo prompt theme
+prompt wunjo
+
+alias ll="ls -lah"
+source ~/.zsh/zsh-history-substring-search.zsh
+

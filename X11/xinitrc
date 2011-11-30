@@ -1,0 +1,8 @@
+xrdb ~/.Xresources
+autorandr --change
+udiskie &
+nm-applet --sm-disable &
+xscreensaver -nosplash&
+
+exec ck-launch-session dbus-launch awesome
+

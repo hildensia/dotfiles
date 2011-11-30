@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/johannes/Documents/ki/fumanoid/furemote/.git'
+let g:netrw_dirhist_2='/home/johannes/Documents/ki/fumanoid/fumanoid/.settings'
+let g:netrw_dirhist_3='/usr/local/matlab/activation'
+let g:netrw_dirhist_4='/home/johannes/Documents/ki/workspace/GNG/.svn'
+let g:netrw_dirhist_5='/home/johannes/packages'
+let g:netrw_dirhist_6='/usr/lib/terminfo'
+let g:netrw_dirhist_7='/home/johannes/.zsh'
+let g:netrw_dirhist_8='/home/johannes/Documents/ki/fumanoid/fumanoid/.git'
