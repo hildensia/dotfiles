@@ -121,5 +121,8 @@ promptinit
 prompt wunjo
 
 alias ll="ls -lah"
+alias vi="gvim --remote-tab-silent"
+
+alias mlr="cd /home/johannes/Documents/mlr"
 source ~/.zsh/zsh-history-substring-search.zsh
 

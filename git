@@ -5,8 +5,8 @@
     name = Johannes Kulick 
     email = kulick@hildensia.de
 [merge]
-    # tool = gvimdiff
-    tool = threesome
+    tool = gvimdiff
+    #tool = threesome
     # Always show a diffstat at the end of a merge:
     stat = true
 [mergetool "threesome"]

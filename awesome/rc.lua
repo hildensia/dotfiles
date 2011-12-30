@@ -287,7 +287,12 @@ clientkeys = awful.util.table.join(
         end),
     awful.key({}, "XF86AudioMute", function() awful.util.spawn("amixer -q sset Master toggle") end),
     awful.key({}, "XF86AudioRaiseVolume", function() awful.util.spawn("amixer -q sset Master 1+") end),
-    awful.key({}, "XF86AudioLowerVolume", function() awful.util.spawn("amixer -q sset Master 1-") end)
+    awful.key({}, "XF86AudioLowerVolume", function() awful.util.spawn("amixer -q sset Master 1-") end),
+    awful.key({}, "XF86AudioPlay", function() awful.util.spawn("mpc toggle") end),
+    awful.key({}, "XF86AudioStop", function() awful.util.spawn("mpc stop") end),
+    awful.key({}, "XF86AudioPrev", function() awful.util.spawn("mpc prev") end),
+    awful.key({}, "XF86AudioNext", function() awful.util.spawn("mpc next") end)
+
 )
 
 -- Compute the maximum number of digit we need, limited to 9
@@ -389,3 +394,6 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+--
+--
+awful.util.spawn('udiskie &')

@@ -19,3 +19,6 @@
 [submodule "nerdcommenter"]
 	path = nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/switch"]
+	path = bundle/switch
+	url = https://github.com/derekwyatt/vim-fswitch.git
