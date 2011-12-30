@@ -1,0 +1,8 @@
+set pages-per-row 1
+set page-padding 10
+
+map <Button4> scroll up
+map <Button5> scroll down
+map <C-Button4> zoom in 
+map <C-Button5> zoom out
+
