@@ -15,13 +15,8 @@ call pathogen#helptags()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " general     
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set textwidth=80
-set cursorline
 set undofile
-
-set expandtab
-set tabstop=4
-set shiftwidth=4
+set undodir=~/.vim/undo
 
 "autocmd!             " clear any autocommands
 set nocompatible     " get out of horrible vi-compatible mode
@@ -116,7 +111,7 @@ set mat=0         " how many tenths of a second to blink matching brackets for
 "set nohlsearch    " do not highlight searched for phrases
 set hlsearch      " highlight all matches for a search pattern
 "set ignorecase    " ignore case in search,
-"set smartcase     " unless they contain upper-case letters.
+"set smartcase     " unless they contain upper-case letters. 
 set incsearch     " incremental search: show the `best match so far' as search strings are typed
 "set gdefault      " assume the /g flag on :s substitutions to replace all matches in a line
 "set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$ " what to show when I hit :set list
@@ -124,7 +119,7 @@ set incsearch     " incremental search: show the `best match so far' as search s
 "set columns=160   " 160 cols wide
 "set so=10         " Keep 10 lines (top/bottom) for scope
 "set novisualbell  " don't blink
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%04.4B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ [TYPE=%Y]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2  " always show the status line
 
 
@@ -132,26 +127,28 @@ set laststatus=2  " always show the status line
 " text formatting/layout
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+set colorcolumn=80
+set cursorline
 "set fo=tcrqn      " (formatoptions)
 set autoindent    " autoindent
 set smartindent   " smartindent 
 "set cindent       " do c-style indenting
-set softtabstop=4 " unify (use indents of 2 spaces)
+set softtabstop=2 " unify (use indents of 2 spaces)
 
 " no tabs
 "set shiftround
 "set expandtab
 " use tabs
-set tabstop=4     " tab spacing (settings below are just to unify it)
-set shiftwidth=4  " unify 
-set expandtab   " real tabs please!
+set tabstop=2     " tab spacing (settings below are just to unify it)
+set shiftwidth=2  " unify 
+set expandtab      " no real tabs please!
 "set smarttab      " use tabs at the start of a line, spaces elsewhere
 
 " nowrap
 "set nowrap        " do not wrap lines (only on display)
 "set sidescroll=10
 " wrap
-set wrap          " wrap lines (only on display)
+""set wrap          " wrap lines (only on display)
 
 set listchars+=tab:>-,eol:<,precedes:<,extends:>
 
@@ -197,6 +194,16 @@ let mapleader = ','
 "map <F12> ggVGg?                          " rot13 the file (toggle)
 
 
+noremap <leader>m :make<CR>
+" NERDtree "
+noremap <leader>n :NERDTreeToggle<CR>
+
+noremap <leader>h :FSHere<CR>
+
+let g:CommandTAcceptSelectionTabMap='<CR>'
+
+inoremap {<CR> {<CR><Space><Space><CR><Backspace>}<Esc>klli
+inoremap ;; <Esc>A;
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " keystrokes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -414,6 +421,7 @@ set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
+set tags+=~/Documents/mlr/tags
 set tags+=~/Documents/ki/fumanoid/fumanoid/tags
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
