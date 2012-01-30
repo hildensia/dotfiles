@@ -37,7 +37,8 @@ if has("gui_running")
 	set columns=120
 	if has("gui_gtk2")
 		""set guifont=Courier\ New\ 10
-		set guifont=Monospace\ 
+		set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline
+    let g:Powerline_symbols = 'fancy'
 	elseif has("x11")
 		"set guifont=-*-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-*
 	else
@@ -421,7 +422,7 @@ set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
 set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
-set tags+=~/Documents/mlr/tags
+set tags+=~/.vim/tags/mlr
 set tags+=~/Documents/ki/fumanoid/fumanoid/tags
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
