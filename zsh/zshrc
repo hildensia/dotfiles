@@ -126,3 +126,4 @@ alias vi="gvim --remote-tab-silent"
 alias mlr="cd /home/johannes/Documents/mlr"
 source ~/.zsh/zsh-history-substring-search.zsh
 
+export PATH="/usr/lib/colorgcc/bin:$PATH"
