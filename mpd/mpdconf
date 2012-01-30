@@ -3,6 +3,7 @@ music_directory         "~/music"
 playlist_directory      "~/.mpd/playlists"
 db_file                 "~/.mpd/mpd.db"
 log_file                "~/.mpd/mpd.log"
+audio_output_format     "44100:16:2"
 
 audio_output {
    type			"alsa"
