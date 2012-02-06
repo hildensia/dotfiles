@@ -1,3 +1,7 @@
+# .zshrc
+# author: Johannes Kulick
+
+# general {{{
 export EDITOR=vi
 unalias run-help
 autoload run-help
@@ -12,6 +16,10 @@ compinit
 setopt listpacked
 #setopt  autocorrect
 setopt  auto_cd
+#}}}
+
+#{{{ Auto-completion
+
 zstyle ':completion:*:*:cd:*' tag-order local-directories
 zstyle ':completion:*:*:lp*:*' tag-order jobs
 zstyle ':completion:*:*:(kill|wait):*' tag-order 'jobs processes'
@@ -75,6 +83,9 @@ zstyle ':completion:*::lp*:jobs' list-colors '=(#b)* [0-9] ##([^    ]##) ##([^  
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
+#}}}
+
+# Keybindings {{{
 bindkey -v # use vi keybindings
 bindkey -M menuselect '/' accept-and-infer-next-history \
                       '^U' undo \
@@ -109,8 +120,10 @@ bindkey '^[s'	copy-prev-shell-word
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
-# zgitinit and prompt_wunjo_setup must be somewhere in your $fpath, see README for more.
+#}}}
 
+# prompt {{{
+# zgitinit and prompt_wunjo_setup must be somewhere in your $fpath, see README for more.
 setopt promptsubst
 
 # Load the prompt theme system
@@ -119,11 +132,15 @@ promptinit
 
 # Use the wunjo prompt theme
 prompt wunjo
+#}}}
 
+# aliases {{{
 alias ll="ls -lah"
 alias vi="gvim --remote-tab-silent"
 
 alias mlr="cd /home/johannes/mlr"
 source ~/.zsh/zsh-history-substring-search.zsh
+#}}}
 
+#use colored gcc if available
 export PATH="/usr/lib/colorgcc/bin:$PATH"
