@@ -1,0 +1,3 @@
+URxvt.perl-ext-common: default,matcher
+URxvt*urlLauncher:         /home/johannes/bin/urxvt-to-uzbl.sh
+URxvt.colorUL: #86a2be
