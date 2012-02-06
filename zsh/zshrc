@@ -142,5 +142,11 @@ alias mlr="cd /home/johannes/mlr"
 source ~/.zsh/zsh-history-substring-search.zsh
 #}}}
 
+# directory stack {{{
+export DIRSTACKSIZE=16
+setopt autopushd pushdminus pushdsilent pushdtohome
+alias dh="dirs -v"
+# }}}
+
 #use colored gcc if available
 export PATH="/usr/lib/colorgcc/bin:$PATH"
