@@ -1,4 +1,4 @@
-linkfiles=(X11/Xdefaults X11/Xauthority X11/xinitrc X11/Xresources zsh zsh/zshrc zsh/zshenv vim vim/vimrc mpd mpd/mpdconf gitconfig mozilla)
+linkfiles=(X11/Xauthority X11/xinitrc X11/Xresources zsh zsh/zshrc zsh/zshenv vim vim/vimrc mpd mpd/mpdconf gitconfig mozilla)
 link_file() {
   ORG="$HOME/.`basename $1`" 
   if [ -f $ORG ]

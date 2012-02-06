@@ -76,10 +76,10 @@
 *color7:                S_base2
 *color15:               S_base3
 
-URxvt.font: xft:Bitstream Vera Sans Mono:size=10:antialias=true
+URxvt.font: xft:Bitstream Vera Sans Mono:size=9:antialias=true
 
 URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.urlLauncher:      /home/johannes/bin/urxvt2uzbl.sh
 URxvt.matcher.button:   1 
 
 URxvt*scrollstyle:plain
