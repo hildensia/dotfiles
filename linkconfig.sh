@@ -14,3 +14,4 @@ for file in "${linkfiles[@]}"; do
 done
 
 git submodule update --init
+mkdir vim/undo # don't track the undo files, but create a dir for them
