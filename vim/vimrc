@@ -24,6 +24,10 @@ filetype plugin on   " load filetype plugins
 "set isk+=_,$,@,%,#,- " none of these should be word dividers, so make them not be (iskeyword)
 set encoding=UTF-8
 "language en_US.UTF-8 " english
+"}}}
+
+" theme/colors {{{ 
+
 if has("gui_running")
 	source $VIMRUNTIME/delmenu.vim
 	set langmenu=en_US.UTF-8
@@ -33,7 +37,7 @@ if has("gui_running")
 	set columns=120
 	if has("gui_gtk2")
 		""set guifont=Courier\ New\ 10
-		set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline
+		set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline\ 9
     let g:Powerline_symbols = 'fancy'
 	elseif has("x11")
 		"set guifont=-*-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-*
@@ -43,10 +47,6 @@ if has("gui_running")
 	endif
 endif
 set viminfo='200,<300,s150,%,h,!
-"}}}
-
-" theme/colors {{{ 
-
 " have syntax highlighting in terminals which can display colors
 if has('syntax') && (&t_Co > 2) || has("gui_running")
 	syntax on " syntax highlighting on
@@ -279,6 +279,14 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
 " }}}
+
+" Python {{{
+
+au FileType python setlocal tabstop=4
+au FileType python setlocal softtabstop=4
+au FileType python setlocal shiftwidth=4
+
+"}}}
 
 " vimrc {{{
 au FileType vim setlocal foldmethod=marker
