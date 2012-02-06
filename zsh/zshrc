@@ -123,7 +123,7 @@ prompt wunjo
 alias ll="ls -lah"
 alias vi="gvim --remote-tab-silent"
 
-alias mlr="cd /home/johannes/Documents/mlr"
+alias mlr="cd /home/johannes/mlr"
 source ~/.zsh/zsh-history-substring-search.zsh
 
 export PATH="/usr/lib/colorgcc/bin:$PATH"
