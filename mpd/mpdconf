@@ -5,6 +5,12 @@ db_file                 "~/.mpd/mpd.db"
 log_file                "~/.mpd/mpd.log"
 audio_output_format     "44100:16:2"
 
+playlist_plugin {
+  name      "lastfm"
+  user      "hildensia"
+  password  "XXXXXXXXX"
+}
+
 audio_output {
    type			"alsa"
    name			"Intern Audio"
