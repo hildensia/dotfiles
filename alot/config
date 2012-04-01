@@ -13,6 +13,7 @@ sent_box = maildir:///home/johannes/mail/Sent
 draft_box = maildir:///home/johannes/mail/Draft
 abook_command = abook --mutt-query
 sendmail_command = msmtp --account=uni -t
+signature = /home/johannes/.signature
 
 [tag translate]
 attachment = A
