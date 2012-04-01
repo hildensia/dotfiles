@@ -2,7 +2,7 @@
 # author: Johannes Kulick
 
 # general {{{
-export EDITOR=vi
+export EDITOR=vim
 unalias run-help
 autoload run-help
 HELPDIR=~/zsh_help
@@ -135,8 +135,11 @@ prompt wunjo
 #}}}
 
 # aliases {{{
-alias ll="ls -lah"
+alias ll="ls -lh"
+alias la="ls -lah"
 alias vi="gvim --remote-tab-silent"
+alias ssha="ssh-add /home/johannes/.ssh/id_rsa"
+alias make="make -j 20"
 
 alias mlr="cd /home/johannes/mlr"
 source ~/.zsh/zsh-history-substring-search.zsh
@@ -148,5 +151,11 @@ setopt autopushd pushdminus pushdsilent pushdtohome
 alias dh="dirs -v"
 # }}}
 
+
+# visual bell after shell commands {{{
+precmd () {
+  echo -ne '\a'  
+}
+# }}}
 #use colored gcc if available
 export PATH="/usr/lib/colorgcc/bin:$PATH"
