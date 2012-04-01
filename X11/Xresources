@@ -77,9 +77,12 @@
 *color15:               S_base3
 
 URxvt.font: xft:Bitstream Vera Sans Mono:size=9:antialias=true
+URxvt.letterSpace: -1
 
 URxvt.perl-ext-common:  default,matcher
 URxvt.urlLauncher:      /home/johannes/bin/urxvt2uzbl.sh
 URxvt.matcher.button:   1 
 
 URxvt*scrollstyle:plain
+
+URxvt.urgentOnBell: True
