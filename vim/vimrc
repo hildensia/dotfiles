@@ -61,6 +61,8 @@ endif
 
 " vim ui {{{
 
+colorscheme solarized
+
 set wildmenu       " turn on wild menu
 " have command-line completion <tab> (for filenames, help topics, option names)
 " first list the available options and complete the longest common part, then
@@ -82,6 +84,7 @@ set errorbells      " make noise
 "set noerrorbells   " don't make noise
 "set vb t_vb=       " prevents vi from making its annoying beeps (visualbell)
 "set fillchars=vert:\ ,stl:\ ,stlnc:\ " make the splitters between windows be blank
+set equalalways
 "}}}
 
 " vim cues {{{
@@ -114,8 +117,8 @@ set colorcolumn=80
 set cursorline
 "set fo=tcrqn      " (formatoptions)
 set autoindent    " autoindent
-set smartindent   " smartindent 
-"set cindent       " do c-style indenting
+"set smartindent   " smartindent 
+set cindent       " do c-style indenting
 set softtabstop=2 " unify (use indents of 2 spaces)
 
 " no tabs
@@ -131,11 +134,11 @@ set expandtab      " no real tabs please!
 "set nowrap        " do not wrap lines (only on display)
 "set sidescroll=10
 " wrap
-""set wrap          " wrap lines (only on display)
+set wrap          " wrap lines (only on display)
 
 set listchars+=tab:>-,eol:<,precedes:<,extends:>
 
-"set textwidth=72  " linebreak with <EOL> after length
+set textwidth=80  " linebreak with <EOL> after length
 "set wrapmargin=5  " linebreak with <EOL> after (screewidth - length)
 
 "}}}
@@ -193,6 +196,10 @@ nnoremap <leader>r :%s/\<<C-r><C-w>\>/
 map <leader>cd :cd %:p:h<CR>
 
 nnoremap <Space> za
+
+nmap <leader>bb :buffers<CR>
+
+nmap <leader>bo :buffer
 "}}}
 
 " keystrokes {{{
@@ -231,6 +238,12 @@ noremap  <Right> ""
 "noremap! <Right> <Esc>
 
 "}}}
+"
+" Commands {{{
+
+command Vrc :e ~/.vimrc
+
+" }}}
 
 " file type specific options {{{
 
@@ -263,7 +276,7 @@ set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 set tags+=~/.vim/tags/mlr
 " build tags of your own project with Ctrl-F12
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q ~/mlr/git/ > ~/.vim/tags/mlr<CR>
 
 " OmniCppComplete
 let OmniCpp_NamespaceSearch = 1
