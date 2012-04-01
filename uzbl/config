@@ -37,6 +37,8 @@ set set_status      = set status_message =
 # Spawn path shortcuts. In spawn the first dir+path match is used in "dir1:dir2:dir3:executable"
 set scripts_dir      = @data_home/uzbl:@prefix/share/uzbl/examples/data:scripts
 
+set proxy_url = http://localhost:8123/
+
 # === Hardcoded handlers =====================================================
 
 # These handlers can't be moved to the new event system yet as we don't
@@ -63,6 +65,7 @@ set download_handler    = sync_spawn @scripts_dir/download.sh
 
 # Load start handler
 @on_event   LOAD_START     @set_status <span foreground="khaki">wait</span>
+@on_event   LOAD_START     if (ssl_verify) { set status_background = #303030; } else { set status_background = #903030; }
 # Reset the keycmd on navigation
 @on_event   LOAD_START     @set_mode
 
@@ -134,7 +137,11 @@ set progress.pending    =
 
 # === Useragent setup ========================================================
 
-set useragent         = Uzbl (Webkit @{WEBKIT_MAJOR}.@{WEBKIT_MINOR}) (@(+uname -sm)@ [@ARCH_UZBL])
+set useragent         = Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-us) AppleWebKit/535+ (KHTML, like Gecko) Version/5.0 Safari/535.4+ Midori/0.4
+#Mozilla/5.0 X11 Linux x86_64 AppleWebKit/535.11 KHTML, like Gecko Chrome/17.0.963.79 Safari/535.11
+#Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21
+#Mozilla/5.0 X11 Linux x86_64 rv 10.0.2 Gecko/20100101 Firefox/10.0.2
+#Uzbl (Webkit @{WEBKIT_MAJOR}.@{WEBKIT_MINOR}) (@(+uname -sm)@ [@ARCH_UZBL])
 
 # === Configure cookie blacklist ========================================================
 
@@ -149,8 +156,6 @@ set useragent         = Uzbl (Webkit @{WEBKIT_MAJOR}.@{WEBKIT_MINOR}) (@(+uname 
 # Set it to certificates store of your distribution, or your own CAfile.
 set ssl_ca_file = /etc/ssl/certs/ca-certificates.crt
 set ssl_verify = 1
-# Command to toggle ssl_verify value:
-@cbind  !ssl = chain 'toggle ssl_verify' 'reload'
 # Example SSL error handler:
 @on_event   LOAD_ERROR    js var patt=new RegExp('SSL handshake failed'); if (patt.test('%3')) {alert ('%3');}
 
@@ -187,6 +192,9 @@ set cbind     = @mode_bind command
 set ebind     = @mode_bind global,-insert
 
 # --- Global & keycmd editing binds ------------------------------------------
+
+# Command to toggle ssl_verify value:
+@cbind  !ssl = chain 'toggle ssl_verify' 'reload' 'set uri_section = <span background="red" foreground="black">\@[\@uri]\@</span> '
 
 # Resets keycmd and returns to default mode.
 @on_event  ESCAPE    @set_mode
@@ -254,6 +262,8 @@ set ebind     = @mode_bind global,-insert
 
 # Navigation binds
 @cbind  b   = back
+@cbind <Button8> = back
+@cbind <Button9> = forward
 @cbind  m   = forward
 @cbind  S   = stop
 @cbind  r   = reload
@@ -281,9 +291,13 @@ set ebind     = @mode_bind global,-insert
 
 # Web searching binds
 @cbind  gg<Google:>_         = uri http://www.google.com/search?q=\@<encodeURIComponent(%r)>\@
-@cbind  ddg<DuckDuckGo:>_    = uri http://duckduckgo.com/?q=%s
+@cbind  gp                   = sh 'echo "uri http://www.google.com/search?q=$(xclip -o | sed s/\\\@/%40/g)" > "$UZBL_FIFO"'
+@cbind  \\scholar<Google Scholar:>_ = uri http://scholar.google.com/scholar?q=\@<encodeURIComponent(%r)>\@
+@cbind  \\leo<Leo:>_         = uri http://dict.leo.org/ende?lp=ende&lang=de&searchLoc=0&cmpType=relaxed&sectHdr=on&spellToler=&search=\@<encodeURIComponent(%r)>\@
+@cbind  \\yt<YouTube:>_      = uri http://www.youtube.com/results?search_query=\@<encodeURIComponent(%r)>\@
 @cbind  \\awiki<Archwiki:>_  = uri http://wiki.archlinux.org/index.php/Special:Search?search=\@<encodeURIComponent(%r)>\@&go=Go
-@cbind  \\wiki<Wikipedia:>_  = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
+@cbind  \\wiki<Wikipedia (en):>_  = uri http://en.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
+@cbind  \\dewiki<Wikipedia (de):>_  = uri http://de.wikipedia.org/w/index.php?title=Special:Search&search=\@<encodeURIComponent(%r)>\@&go=Go
 
 # Handy binds
 # Set function shortcut
@@ -359,7 +373,8 @@ set follow_hint_keys = 0123456789
 @cbind  fL*  = spawn @scripts_dir/follow.sh \@< uzbl.follow("\@follow_hint_keys", "%s", 'returnuri') >\@ set
 @cbind  FL*  = spawn @scripts_dir/follow.sh \@< uzbl.follow("\@follow_hint_keys", "%s", 'returnuri') >\@ clipboard
 @cbind  fi   = spawn @scripts_dir/go_input.sh
-@cbind  ft*  = spawn @scripts_dir/follow.sh \@< uzbl.follow("\@follow_hint_keys", "%s", 'returnuri') >\@ event NEW_TAB %s
+@cbind  fsl* = spawn @scripts_dir/stackuri.sh \@< uzbl.follow("\@follow_hint_keys", "%s", 'returnuri') >\@ stack
+
 
 @cbind  '*  = spawn @scripts_dir/follow.sh \@< uzbl.follow.followTextContent("%s", 'click') >\@
 
