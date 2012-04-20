@@ -38,7 +38,6 @@ if has("gui_running")
 	if has("gui_gtk2")
 		""set guifont=Courier\ New\ 10
 		set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline\ 9
-    let g:Powerline_symbols = 'fancy'
 	elseif has("x11")
 		"set guifont=-*-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-*
 	else
@@ -47,6 +46,7 @@ if has("gui_running")
 	endif
 endif
 set viminfo='200,<300,s150,%,h,!
+let g:Powerline_symbols = 'fancy'
 " have syntax highlighting in terminals which can display colors
 if has('syntax') && (&t_Co > 2) || has("gui_running")
 	syntax on " syntax highlighting on
