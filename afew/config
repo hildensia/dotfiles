@@ -1,0 +1,15 @@
+[global]
+
+[MailMover]
+folders = INBOX
+max_age = 15
+INBOX = 'tag:spam':spam
+
+
+# This is the default filter chain
+[SpamFilter]
+[ClassifyingFilter]
+[KillThreadsFilter]
+[ListMailsFilter]
+[ArchiveSentMailsFilter]
+[InboxFilter]
