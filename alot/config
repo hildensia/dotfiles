@@ -1,22 +1,118 @@
-[account hildensia]
-realname = Johannes Kulick
-address = kulick@hildensia.de
-sent_box = maildir:///home/johannes/mail/Sent
-draft_box = maildir:///home/johannes/mail/Draft
-abook_command = abook --mutt-query
-sendmail_command = msmtp --account=hildensia -t
+[accounts]
+  [[hildensia]]
+    realname = Johannes Kulick
+    address = kulick@hildensia.de
+    sent_box = maildir:///home/johannes/mail/Sent
+    draft_box = maildir:///home/johannes/mail/Draft
+    sendmail_command = msmtp --account=hildensia -t
+    [[[abook]]]
+      type = shellcommand
+      command = nottoomuch-addresses.sh
+      regexp = \"(?P<name>.+)\"\s*<(?P<email>.*.+?@.+?)>
 
-[account uni]
-realname = Johannes Kulick
-address = kulick@inf.fu-berlin.de
-sent_box = maildir:///home/johannes/mail/Sent
-draft_box = maildir:///home/johannes/mail/Draft
-abook_command = abook --mutt-query
-sendmail_command = msmtp --account=uni -t
-signature = /home/johannes/.signature
+  [[uni]]
+    realname = Johannes Kulick
+    address = kulick@inf.fu-berlin.de
+    sent_box = maildir:///home/johannes/mail/Sent
+    draft_box = maildir:///home/johannes/mail/Draft
+    sendmail_command = msmtp --account=uni -t
+    signature = /home/johannes/.signature
+    [[[abook]]]
+      type = shellcommand
+      command = nottoomuch-addresses.sh
+      regexp = \"(?P<name>.+)\"\s*<(?P<email>.*.+?@.+?)>
 
-[tag translate]
-attachment = A
-unread = 	✉ 
+  [[mailless]]
+    realname = Johannes Kulick
+    address = johannes@mailless.org
+    sent_box = maildir:///home/johannes/mail/Sent
+    draft_box = maildir:///home/johannes/mail/Draft
+    sendmail_command = msmtp --account=uni -t
+    signature = /home/johannes/.signature
+    [[[abook]]]
+      type = shellcommand
+      command = nottoomuch-addresses.sh
+      regexp = \"(?P<name>.+)\"\s*<(?P<email>.*.+?@.+?)>
+
+[tags]
+  [[attachment]]
+    translated = A
+  [[unread]]
+    translated = ✉ 
+    fg         = white
+  [[flagged]]
+    translated = ⚑
+    fg = light red
+  [[replied]]
+    translated = ⏎
+  [[encrypted]]
+    translated = ⚷
+
+[bindings]
+    j = move down
+    k = move up
+    ' ' = move page down
+    esc = cancel
+    enter = select
+    @ = refresh
+    ? = help bindings
+    I = search tag:inbox AND NOT tag:killed
+    L = taglist
+    shift tab = bprevious
+    U = search tag:unread
+    tab = bnext
+    \ = prompt 'search '
+    d = bclose
+    $ = flush
+    m = compose
+    o = prompt 'search '
+    q = exit
+    ';' = bufferlist
+    ':' = prompt
 
 
+    [[bufferlist]]
+        x = close
+        select = openfocussed
+
+    [[search]]
+        a = toggletags inbox
+        & = toggletags killed
+        ! = toggletags flagged
+        s = toggletags unread
+        l = retagprompt
+        O = refineprompt
+        | = refineprompt
+        '#' = toggletags spam
+
+    [[envelope]]
+        a = prompt 'attach ~/'
+        y = send
+        P = save
+        s = 'refine Subject'
+        t = 'refine To'
+        b = 'refine Bcc'
+        c = 'refine Cc'
+        select = edit
+        H = toggleheaders
+
+    [[taglist]]
+
+    [[thread]]
+        C = fold --all
+        E = unfold --all
+        c = fold
+        e = unfold
+        < = fold
+        > = unfold
+        H = toggleheaders
+        h = togglesource
+        P = print --all --separately --add_tags
+        S = save --all
+        g = reply --all
+        f = forward
+        p = print --add_tags
+        n = editnew
+        s = save
+        r = reply
+        | = prompt 'pipeto '
