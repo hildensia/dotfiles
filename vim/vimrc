@@ -170,7 +170,7 @@ let mapleader = ','
 noremap <leader>m :make<CR>
 
 " NERDtree 
-noremap <leader>n :NERDTreeToggle<CR>
+noremap <leader>n :Vex<CR>
 
 " jump between .h and .cpp
 noremap <leader>h :FSHere<CR>
