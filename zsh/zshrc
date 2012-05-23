@@ -137,9 +137,10 @@ prompt wunjo
 # aliases {{{
 alias ll="ls -lh"
 alias la="ls -lah"
-alias vi="gvim --remote-tab-silent"
+alias vi="vim"
 alias ssha="ssh-add /home/johannes/.ssh/id_rsa"
 alias make="make -j 20"
+alias tmux="TERM=screen-256color-bce tmux"
 
 alias mlr="cd /home/johannes/mlr"
 source ~/.zsh/zsh-history-substring-search.zsh
@@ -159,3 +160,4 @@ precmd () {
 # }}}
 #use colored gcc if available
 export PATH="/usr/lib/colorgcc/bin:$PATH"
+
