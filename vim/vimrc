@@ -16,6 +16,7 @@ set undodir=~/.vim/undo
 
 "autocmd!             " clear any autocommands
 set nocompatible     " get out of horrible vi-compatible mode
+set hidden
 filetype on          " enable filetype detection
 set history=1000     " #lines to remember
 "set confirm         " enable error files and error jumping
