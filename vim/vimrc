@@ -201,6 +201,14 @@ nnoremap <Space> za
 nmap <leader>bb :buffers<CR>
 
 nmap <leader>bo :buffer
+
+" vimdiff shortcuts
+noremap dlg :diffget 1<CR>
+noremap dlp :diffput 1<CR>
+noremap dmg :diffget 2<CR>
+noremap dmp :diffput 2<CR>
+noremap drg :diffget 3<CR>
+noremap drp :diffput 3<CR>
 "}}}
 
 " keystrokes {{{
@@ -237,6 +245,8 @@ noremap  <Left> ""
 "noremap! <Left> <Esc>
 noremap  <Right> ""
 "noremap! <Right> <Esc>
+"
+
 
 "}}}
 "
