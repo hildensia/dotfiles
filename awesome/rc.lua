@@ -7,7 +7,7 @@ require("beautiful")
 -- Notification library
 require("naughty")
 
-require("vicious")
+local vicious = require("vicious")
 require("calendar2")
 
 -- {{{ Variable definitions
@@ -15,7 +15,7 @@ require("calendar2")
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt" 
+terminal = "urxvtc" 
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = "gvim"
 
