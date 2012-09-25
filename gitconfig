@@ -5,15 +5,16 @@
     name = Johannes Kulick 
     email = kulick@hildensia.de
 [merge]
-    tool = gvimdiff
+    tool = threesome
     #tool = threesome
     # Always show a diffstat at the end of a merge:
     stat = true
 [mergetool "threesome"]
-    cmd = "gvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+    cmd = "vimdiff $LOCAL $MERGED $REMOTE"
     trustExitCode = true
 [alias]
-    st = status
+  st = status
+  sth = status .
     ci = commit
     ca = commit -a
     br = branch
