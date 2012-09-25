@@ -19,6 +19,11 @@ setopt  auto_cd
 #}}}
 
 #{{{ Auto-completion
+#
+_force_rehash() {
+  (( CURRENT == 1)) && rehash
+  return 1
+}
 
 zstyle ':completion:*:*:cd:*' tag-order local-directories
 zstyle ':completion:*:*:lp*:*' tag-order jobs
@@ -32,7 +37,7 @@ zstyle ':completion:*:match:*' original yes
 zstyle ':completion:incremental:*' list yes
 zstyle ':completion:incremental:*' prompt 'incremental (%c): %u%s%a  %l'
 zstyle ':completion:*:oldlist:*' menu verbose
-zstyle ':completion:predict:*' completer _complete
+zstyle ':completion:predict:*' completer _force_rehash _complete
 zstyle ':completion:predict:*' list always
 zstyle ':completion:predict:*' cursor key
 zstyle ':completion:predict:*' special-dirs yes
