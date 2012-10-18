@@ -117,9 +117,8 @@ set laststatus=2  " always show the status line
 set colorcolumn=80
 set cursorline
 "set fo=tcrqn      " (formatoptions)
-set autoindent    " autoindent
+"set autoindent    " autoindent
 "set smartindent   " smartindent 
-set cindent       " do c-style indenting
 set softtabstop=2 " unify (use indents of 2 spaces)
 
 " no tabs
@@ -203,13 +202,17 @@ nmap <leader>bb :buffers<CR>
 nmap <leader>bo :buffer
 
 " vimdiff shortcuts
-noremap dlg :diffget 1<CR>
-noremap dlp :diffput 1<CR>
-noremap dmg :diffget 2<CR>
-noremap dmp :diffput 2<CR>
-noremap drg :diffget 3<CR>
-noremap drp :diffput 3<CR>
+noremap <leader>dlg :diffget 1<CR>
+noremap <leader>dlp :diffput 1<CR>
+noremap <leader>dmg :diffget 2<CR>
+noremap <leader>dmp :diffput 2<CR>
+noremap <leader>drg :diffget 3<CR>
+noremap <leader>drp :diffput 3<CR>
+
+" Wiki
+noremap <leader>w :e ~/wiki/main.org<CR>
 "}}}
+
 
 " keystrokes {{{
 
@@ -253,16 +256,24 @@ noremap  <Right> ""
 " Commands {{{
 
 command Vrc :e ~/.vimrc
+command Wiki :e ~/wiki/main.org
 
 " }}}
 
+" {{{ Templates
+augroup templates
+au BufNewFile * silent! 0r ~/.vim/templates/temp.%:e
+au BufNewFile * silent! %substitute#\[:VE:\]\(.\{-\}\)\[:EVE:\]#\=eval(submatch(1))#ge
+augroup END
+" }}}
+"
 " file type specific options {{{
 
 " tex {{{
 " " IMPORTANT: grep will sometimes skip displaying the file name if you
 " " search in a singe file. This will confuse Latex-Suite. Set your grep
 " " program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
+set grepprg=ack
 "
 " " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults
 " to
@@ -301,6 +312,10 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
+au FileType cpp set cindent       " do c-style indenting
+au FileType c set cindent       " do c-style indenting
+
+
 
 " }}}
 
@@ -321,4 +336,9 @@ au FileType vim setlocal foldmarker={{{,}}}
 au FileType zsh setlocal foldmethod=marker
 au FileType zsh setlocal foldmarker={{{,}}}
 " }}}
+"
+" mail {{{
+autocmd BufRead /tmp/alot.* set ft=mail
 "}}}
+"}}}
+"
