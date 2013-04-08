@@ -3,8 +3,8 @@ link_file() {
   ORG="$HOME/.`basename $1`" 
   if [ -f $ORG ]
   then 
-    rm $ORG
-    echo "remove $ORG";
+    mv $ORG $ORG.save
+    echo "saved $ORG as $ORG.save";
   fi
   ln -s ".config/$1" $ORG
    
