@@ -1,11 +1,8 @@
-xrdb ~/.Xresources
 autorandr --change
-nm-applet --sm-disable &
 xautolock -time 10 -locker "/usr/bin/xlock -mode blank" &
 xautolock -time 20 -locker "sudo pm-suspend" &
 
-urxvtd -f
+dwmstatus&
 
-exec ck-launch-session dbus-launch ssh-agent awesome
-udiskie & 
+exec ssh-agent dwm
 
