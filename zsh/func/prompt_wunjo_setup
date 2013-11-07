@@ -89,7 +89,11 @@ prompt_wunjo_setup() {
 	pc[date]='cyan'
 	pc[time]='Blue'
 	pc[host]='Green'
-	pc[user]='cyan'
+  if [[ $(whoami) ==  'root' ]]; then
+    pc[user]='red'
+  else
+	  pc[user]='cyan'
+  fi
 	pc[punc]='yellow'
 	pc[line]='magenta'
 	pc[hist]='green'
