@@ -111,8 +111,8 @@ theme_dir = $XDG_CONFIG_HOME/alot/theme
     [[taglist]]
 
     [[thread]]
-        C = fold --all
-        E = unfold --all
+        C = fold *
+        E = unfold *
         c = fold
         e = unfold
         < = fold
@@ -128,3 +128,9 @@ theme_dir = $XDG_CONFIG_HOME/alot/theme
         s = save
         r = reply
         | = prompt 'pipeto '
+        'g j' = move next sibling
+        'g k' = move previos sibling
+        'g h' = mmove parent
+        'g l' = move first reply
+        ' ' = move next
+        backspace = move previous
