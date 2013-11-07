@@ -148,6 +148,7 @@ alias make="make -j 20"
 alias tmux="TERM=screen-256color-bce tmux"
 
 alias mlr="cd /home/johannes/mlr"
+alias nmn="notmuch new"
 source ~/.zsh/zsh-history-substring-search.zsh
 #}}}
 
@@ -164,5 +165,8 @@ precmd () {
 }
 # }}}
 #use colored gcc if available
-export PATH="/usr/lib/colorgcc/bin:$PATH"
+export PATH="/usr/lib/colorgcc/bin:/home/johannes/.gem/ruby/2.0.0/bin:/home/johannes/bin:$PATH"
+export GOPATH="/home/johannes/src:$GOPATH"
 
+#use wx for gnuplot
+export GNUTERM=wxt
