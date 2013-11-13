@@ -340,5 +340,8 @@ au FileType zsh setlocal foldmarker={{{,}}}
 " mail {{{
 autocmd BufRead /tmp/alot.* set ft=mail
 "}}}
+" roslaunch files {{{
+autocmd BufRead *.launch set ft=xml  
+" }}}
 "}}}
 "
