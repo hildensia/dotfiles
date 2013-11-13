@@ -5,7 +5,8 @@ SAVEHIST=1000
 HISTFILE=~/.history
 export SCUMMVM_PORT=65:0
 export PATH=$PATH:/usr/X11R6/bin:/opt/bin:/usr/local/bin:/opt/kde/bin:/opt/gnome/bin:
-export LESS="-R"   
+export LESS="-R"  
+export MLR_PATH=/home/johannes/mlr/git
 alias ...='../..' 
 alias ....='../../..' 
 alias .....='../../../..' 
@@ -23,4 +24,4 @@ fi
 fpath=($fpath $HOME/.zsh/func)
 typeset -U fpath
 
-
+source ~/src/ros/setup.zsh
