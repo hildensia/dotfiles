@@ -26,3 +26,6 @@
 [submodule "vim/bundle/gnupg.vim"]
 	path = vim/bundle/gnupg.vim
 	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
