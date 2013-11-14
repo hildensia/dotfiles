@@ -1,10 +1,29 @@
+theme=solarized_dark
+theme_dir = $XDG_CONFIG_HOME/alot/theme
+
 [accounts]
+  [[mailless]]
+    realname = Johannes Kulick
+    address = johannes@mailless.org
+    sent_box = maildir:///home/johannes/mail/Sent
+    draft_box = maildir:///home/johannes/mail/Draft
+    sendmail_command = msmtp --account=mailless -t
+    signature = /home/johannes/.signature
+    sign_by_default = 1
+    gpg_key = johannes@mailless.org
+    [[[abook]]]
+      type = shellcommand
+      command = nottoomuch-addresses.sh
+      regexp = \"(?P<name>.+)\"\s*<(?P<email>.*.+?@.+?)>
+
   [[hildensia]]
     realname = Johannes Kulick
     address = kulick@hildensia.de
     sent_box = maildir:///home/johannes/mail/Sent
     draft_box = maildir:///home/johannes/mail/Draft
     sendmail_command = msmtp --account=hildensia -t
+    sign_by_default = 1
+    gpg_key = kulick@hildensia.de
     [[[abook]]]
       type = shellcommand
       command = nottoomuch-addresses.sh
@@ -12,23 +31,13 @@
 
   [[uni]]
     realname = Johannes Kulick
-    address = kulick@inf.fu-berlin.de
+    address = johannes.kulick@ipvs.uni-stuttgart.de
     sent_box = maildir:///home/johannes/mail/Sent
     draft_box = maildir:///home/johannes/mail/Draft
-    sendmail_command = msmtp --account=uni -t
+    sendmail_command = msmtp --account=unistuttgart -t
     signature = /home/johannes/.signature
-    [[[abook]]]
-      type = shellcommand
-      command = nottoomuch-addresses.sh
-      regexp = \"(?P<name>.+)\"\s*<(?P<email>.*.+?@.+?)>
-
-  [[mailless]]
-    realname = Johannes Kulick
-    address = johannes@mailless.org
-    sent_box = maildir:///home/johannes/mail/Sent
-    draft_box = maildir:///home/johannes/mail/Draft
-    sendmail_command = msmtp --account=uni -t
-    signature = /home/johannes/.signature
+    sign_by_default = 1
+    gpg_key = kulick@inf.fu-berlin.de
     [[[abook]]]
       type = shellcommand
       command = nottoomuch-addresses.sh
@@ -47,6 +56,8 @@
     translated = ⏎
   [[encrypted]]
     translated = ⚷
+  [[signed]]
+    translated = ✍
 
 [bindings]
     j = move down
@@ -83,7 +94,7 @@
         l = retagprompt
         O = refineprompt
         | = refineprompt
-        '#' = toggletags spam
+        '#' = toggletags spam, inbox
 
     [[envelope]]
         a = prompt 'attach ~/'
@@ -95,12 +106,13 @@
         c = 'refine Cc'
         select = edit
         H = toggleheaders
+        e = toggleencrypt
 
     [[taglist]]
 
     [[thread]]
-        C = fold --all
-        E = unfold --all
+        C = fold *
+        E = unfold *
         c = fold
         e = unfold
         < = fold
@@ -116,3 +128,9 @@
         s = save
         r = reply
         | = prompt 'pipeto '
+        'g j' = move next sibling
+        'g k' = move previos sibling
+        'g h' = mmove parent
+        'g l' = move first reply
+        ' ' = move next
+        backspace = move previous

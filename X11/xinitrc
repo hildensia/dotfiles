@@ -1,8 +1,6 @@
 autorandr --change
 xautolock -time 10 -locker "/usr/bin/xlock -mode blank" &
-xautolock -time 20 -locker "sudo pm-suspend" &
-
+xautolock -time 20 -locker "systemctl suspend" &
 dwmstatus&
-
 exec ssh-agent dwm
 

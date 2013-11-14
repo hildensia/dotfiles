@@ -3,6 +3,8 @@ mailpath=(/var/mail'?Neue Mail')
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.history
+
+#source $XDG_CONFIG_HOME/user-dirs.dirs
 export SCUMMVM_PORT=65:0
 export PATH=$PATH:/usr/X11R6/bin:/opt/bin:/usr/local/bin:/opt/kde/bin:/opt/gnome/bin:
 export LESS="-R"  
@@ -14,6 +16,8 @@ alias ......='../../../../..'
 alias .......='../../../../../..'
 alias fumanoid="~/Documents/ki/fumanoid/fumanoid"
 alias furemote="~/Documents/ki/fumanoid/furemote"
+alias ams="~/mlr/git/usr/JK/ams"
+alias vpn="openconnect asa1.ipvs.uni-stuttgart.de"
 
 if [[ $EUID -eq 0 ]]; then
         PROMPT="%Broot%b@%m:%4(~:...:)%3c%B#%b "
@@ -25,3 +29,4 @@ fpath=($fpath $HOME/.zsh/func)
 typeset -U fpath
 
 source ~/src/ros/setup.zsh
+export BROWSER=chromium-browser
