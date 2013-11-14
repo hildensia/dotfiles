@@ -15,12 +15,13 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'gnupg.vim'
 Bundle 'jceb/vim-orgmode'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'AndrewRadev/switch.vim'
 Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'utl.vim'
 Bundle 'speeddating.vim'
 Bundle 'fugitive.vim'
+Bundle 'Syntastic'
+Bundle 'FSwitch'
 "}}}
 
 " general {{{ 
