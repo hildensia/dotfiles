@@ -15,3 +15,4 @@ done
 
 git submodule update --init
 mkdir vim/undo # don't track the undo files, but create a dir for them
+mkdir vim/swap # don't track the undo files, but create a dir for them
