@@ -1,5 +1,5 @@
 [core]
-    editor = "gvim -f"
+    editor = "vim -f"
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [user]
     name = Johannes Kulick 
@@ -32,7 +32,7 @@
     m = checkout master
     # start vim in diffmode for chaeges.
     # every file gets opened seperately
-    d = difftool -y -t gvimdiff
+    d = difftool -y -t vimdiff
     unstage = reset HEAD --
     # undo last commit
     undo = reset --soft HEAD^
