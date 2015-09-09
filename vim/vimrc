@@ -182,6 +182,11 @@ noremap <leader>drp :diffput 3<CR>
 
 " Wiki
 noremap <leader>w :e ~/SparkleShare/wiki/main.org<CR>
+
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gp :Gpush<CR>
+noremap <leader>gf :Gpull<CR>
+
 "}}}
 
 
@@ -234,8 +239,9 @@ command Sudow :w !sudo tee %
 
 " {{{ Templates
 augroup templates
-au BufNewFile * silent! 0r ~/.vim/templates/temp.%:e
-au BufNewFile * silent! %substitute#\[:VE:\]\(.\{-\}\)\[:EVE:\]#\=eval(submatch(1))#ge
+  au BufNewFile * silent! 0r ~/.vim/templates/temp.%:e
+  au BufNewFile * silent!
+  %substitute#\[:VE:\]\(.\{-\}\)\[:EVE:\]#\=eval(submatch(1))#ge
 augroup END
 " }}}
 "
@@ -251,26 +257,15 @@ set grepprg=ack
 " to
 " " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " " The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
-
-let g:Tex_CompileRule_pdf = 'xelatex --interaction=nonstopmode --aux-directory=/home/johannes/temp/latexaux $*'
-let g:Tex_DefaultTargetFormat = 'pdf'
-let g:Tex_ViewRule_pdf = 'zathura'
-let g:Tex_MultipleCompileFormats = 'pdf'
-
 " Math enviroments get a pretty visualization
+
+let g:vimtex_view_method = 'zathura'
+let g:latex_latexmk_options='-pdf'
 set cole=2
 "}}}
 
 " CPP {{{
 " configure tags - add additional tags here or comment out not-used ones
-set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
-set tags+=~/.vim/tags/mlr
-" build tags of your own project with Ctrl-F12
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q ~/mlr/git/ > ~/.vim/tags/mlr<CR>
 
 " OmniCppComplete
 "let OmniCpp_NamespaceSearch = 1
@@ -303,6 +298,24 @@ au FileType python setlocal shiftwidth=4
 au FileType vim setlocal foldmethod=marker
 au FileType vim setlocal foldmarker={{{,}}}
 " }}}
+
+" zshrc {{{
+au FileType zsh setlocal foldmethod=marker
+au FileType zsh setlocal foldmarker={{{,}}}
+" }}}
+"
+" mail {{{
+autocmd BufRead /tmp/alot.* set ft=mail
+"}}}
+" roslaunch files {{{
+autocmd BufRead *.launch set ft=xml  
+"
+" wiki {{{
+au FileType org setlocal foldlevel=5
+" }}}
+"}}}
+"
+
 
 " zshrc {{{
 au FileType zsh setlocal foldmethod=marker
