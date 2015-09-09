@@ -6,22 +6,20 @@
 " <kulick -at- inf.fu-berlin.de>
 
 " bundles {{{
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'gnupg.vim'
-Bundle 'jceb/vim-orgmode'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'LaTeX-Suite-aka-Vim-LaTeX'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'utl.vim'
-Bundle 'speeddating.vim'
-Bundle 'fugitive.vim'
-Bundle 'Syntastic'
-Bundle 'FSwitch'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'gnupg.vim'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'fugitive.vim'
+Plugin 'Syntastic'
+Plugin 'FSwitch'
+Plugin 'lervag/vimtex'
+call vundle#end()
 "}}}
 
 " general {{{ 
