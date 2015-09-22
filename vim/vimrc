@@ -16,7 +16,7 @@ Plugin 'gnupg.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'fugitive.vim'
-Plugin 'Syntastic'
+"Plugin 'Syntastic'
 Plugin 'FSwitch'
 Plugin 'lervag/vimtex'
 call vundle#end()
@@ -135,6 +135,7 @@ autocmd FileType make set noexpandtab shiftwidth=8
 
 " mappings {{{
 let mapleader = ','
+let maplocalleader = ','
 let localleader = ','
 let LocalLeader = ','
 
@@ -184,6 +185,10 @@ noremap <leader>w :e ~/SparkleShare/wiki/main.org<CR>
 noremap <leader>gs :Gstatus<CR>
 noremap <leader>gp :Gpush<CR>
 noremap <leader>gf :Gpull<CR>
+
+noremap <leader>xx <Esc>A<Space>$\checkmark$<Esc>
+
+inoremap <F1> <Esc>
 
 "}}}
 
@@ -259,6 +264,7 @@ set grepprg=ack
 
 let g:vimtex_view_method = 'zathura'
 let g:latex_latexmk_options='-pdf'
+let g:vimtex_fold_enabled = 0
 set cole=2
 "}}}
 
