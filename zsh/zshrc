@@ -136,8 +136,25 @@ setopt promptsubst
 autoload -U promptinit
 promptinit
 
+vim_ins_mode="[INS]"
+vim_cmd_mode="[CMD]"
+vim_mode=$vim_ins_mode
+
+function zle-keymap-select {
+  vim_mode="${${KEYMAP/vicmd/${vim_cmd_mode}}/(main|viins)/${vim_ins_mode}}"
+  zle reset-prompt
+}
+zle -N zle-keymap-select
+
+function zle-line-finish {
+  vim_mode=$vim_ins_mode
+}
+
+zle -N zle-line-finish
 # Use the wunjo prompt theme
 prompt wunjo
+#
+#. /usr/share/zsh/site-contrib/powerline.zsh
 #}}}
 
 # aliases {{{
@@ -145,8 +162,11 @@ alias ll="ls -lh"
 alias la="ls -lah"
 alias vi="vim"
 alias ssha="ssh-add /home/johannes/.ssh/id_rsa"
-alias make="make -j 20"
+alias make="make -j 4"
 alias tmux="TERM=screen-256color-bce tmux"
+alias groovy="source ~/src/catkin_ws/devel/setup.zsh"
+alias addpr2="source ~/SparkleShare/mlr\ documents/doc/pr2/pr2lansetup"
+alias ipnb="ipython2 notebook"
 
 alias mlr="cd /home/johannes/mlr"
 alias nmn="notmuch new"
@@ -167,3 +187,14 @@ precmd () {
 # }}}
 #use wx for gnuplot
 export GNUTERM=wxt
+
+# export the gpg-agent stuff
+export $(cat ~/.gnupg/gpg-agent-info)
+
+export GCC_COLORS=1
+export PATH=/home/johannes/.local/bin:/home/johannes/anaconda3/bin:/home/johannes/bin:/home/johannes/.gem/ruby/2.2.0/bin:/home/johannes/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/X11R6/bin:/opt/bin:/opt/kde/bin:/opt/gnome/bin:/bin
+
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+fi

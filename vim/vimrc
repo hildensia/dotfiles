@@ -13,12 +13,16 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'gnupg.vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'fugitive.vim'
-"Plugin 'Syntastic'
+Plugin 'Syntastic'
 Plugin 'FSwitch'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'svermeulen/vim-easyclip'
 Plugin 'lervag/vimtex'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 "}}}
 
@@ -171,6 +175,9 @@ nmap <leader>bb :buffers<CR>
 
 nmap <leader>bo :buffer
 
+nmap <C-j> ddp
+nmap <C-k> ddkP
+
 " vimdiff shortcuts
 noremap <leader>dlg :diffget 1<CR>
 noremap <leader>dlp :diffput 1<CR>
@@ -188,7 +195,9 @@ noremap <leader>gf :Gpull<CR>
 
 noremap <leader>xx <Esc>A<Space>$\checkmark$<Esc>
 
-inoremap <F1> <Esc>
+noremap <leader>n <Esc>:cn<CR>zz
+
+imap <F1> <Esc>
 
 "}}}
 
@@ -237,6 +246,8 @@ noremap  <Right> ""
 command Vrc :e ~/.vimrc
 command Wiki :e ~/SparklShare/wiki/main.org
 command Sudow :w !sudo tee %
+
+let g:EasyClipUseSubstituteDefaults=1
 
 " }}}
 
