@@ -165,9 +165,5 @@ precmd () {
   echo -ne '\a'  
 }
 # }}}
-#use colored gcc if available
-export PATH="/usr/lib/colorgcc/bin:/home/johannes/.gem/ruby/2.0.0/bin:/home/johannes/bin:$PATH"
-export GOPATH="/home/johannes/src:$GOPATH"
-
 #use wx for gnuplot
 export GNUTERM=wxt
