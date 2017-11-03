@@ -1,31 +1,15 @@
-alias ls='ls --color=auto'
-mailpath=(/var/mail'?Neue Mail')
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.history
 
 #source $XDG_CONFIG_HOME/user-dirs.dirs
-export SCUMMVM_PORT=65:0
-export PATH=$PATH:/usr/X11R6/bin:/opt/bin:/usr/local/bin:/opt/kde/bin:/opt/gnome/bin:
-export LESS="-R"  
-export MLR_PATH=/home/johannes/mlr/git
 alias ...='../..' 
 alias ....='../../..' 
 alias .....='../../../..' 
 alias ......='../../../../..' 
 alias .......='../../../../../..'
-alias fumanoid="~/Documents/ki/fumanoid/fumanoid"
-alias furemote="~/Documents/ki/fumanoid/furemote"
-alias ams="~/mlr/git/usr/JK/ams"
-alias vpn="openconnect asa1.ipvs.uni-stuttgart.de"
-
-if [[ $EUID -eq 0 ]]; then
-        PROMPT="%Broot%b@%m:%4(~:...:)%3c%B#%b "
-else
-        PROMPT="%n@%m:%4(~:...:)%3c$ "
-fi
 
 fpath=($fpath $HOME/.zsh/func)
 typeset -U fpath
 
-export BROWSER=chromium-browser
+PATH=$PATH:/Users/jkkulick/anaconda3/bin
