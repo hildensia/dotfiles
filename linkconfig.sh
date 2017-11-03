@@ -1,6 +1,6 @@
 #!/bin/bash
 
-linkfiles=(X11/Xauthority X11/xinitrc X11/Xresources zsh zsh/zshrc zsh/zshenv vim vim/vimrc mpd mpd/mpdconf gitconfig gdb/gdbinit tmux.conf)
+linkfiles=(X11/Xauthority X11/xinitrc X11/Xresources zsh zsh/zshrc zsh/zshenv vim vim/vimrc mpd mpd/mpdconf gitconfig gdb/gdbinit tmux.conf zim zimrc zlogin)
 link_file() {
   ORG="$HOME/.`basename $1`" 
   if [ -f $ORG ]
@@ -16,6 +16,5 @@ for file in "${linkfiles[@]}"; do
 done
 
 git submodule update --init  # get vundle
-vim +BundleInstall +qall  # install all bundles via vundle
 mkdir vim/undo # don't track the undo files, but create a dir for them
 mkdir vim/swap # don't track the undo files, but create a dir for them
