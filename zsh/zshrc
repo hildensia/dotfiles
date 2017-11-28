@@ -1,3 +1,5 @@
+
+
 #
 # User configuration sourced by interactive shells
 #
@@ -9,8 +11,12 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 if [[ -s ${ZIM_HOME}/init.zsh ]]; then
   source ${ZIM_HOME}/init.zsh
 fi
+
 # .zshrc
 # author: Johannes Kulick
+#
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
 
 # aliases {{{
 alias ll="ls -lh"
@@ -29,10 +35,8 @@ alias nmn="notmuch new"
 
 # directory stack {{{
 export DIRSTACKSIZE=16
-setopt autopushd pushdminus pushdsilent pushdtohome
 alias dh="dirs -v"
 # }}}
 
 #use wx for gnuplot
 export GNUTERM=wxt
-
