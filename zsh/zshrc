@@ -27,6 +27,10 @@ alias mlr="cd /home/johannes/mlr"
 alias nmn="notmuch new"
 #}}}
 
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
+
+
 # directory stack {{{
 export DIRSTACKSIZE=16
 setopt autopushd pushdminus pushdsilent pushdtohome
