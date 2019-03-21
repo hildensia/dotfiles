@@ -11,6 +11,12 @@ alias .....='../../../..'
 alias ......='../../../../..' 
 alias .......='../../../../../..'
 
+alias bb=brazil-build
+alias bbns="brazil-build nvidia-shell"
+alias bball="brazil-recursive-cmd --allPackages brazil-build"
+
+alias cdr='cd $HOME/src/robot/src/RobBlnManipulation'
+
 fpath=($fpath $HOME/.zsh/func)
 typeset -U fpath
 
@@ -18,3 +24,4 @@ BRAZIL_CLI_BIN=/apollo/env/SDETools/bin
 PATH=$HOME/.toolbox/bin:$BRAZIL_CLI_BIN:$PATH:/Users/jkkulick/anaconda3/bin:/Users/jkkulick/bin
 
 source /Users/jkkulick/.profile
+

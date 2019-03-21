@@ -1,3 +1,5 @@
+
+
 #
 # User configuration sourced by interactive shells
 #
@@ -9,8 +11,12 @@ export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
 if [[ -s ${ZIM_HOME}/init.zsh ]]; then
   source ${ZIM_HOME}/init.zsh
 fi
+
 # .zshrc
 # author: Johannes Kulick
+#
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
 
 # aliases {{{
 alias ll="ls -lh"
@@ -33,13 +39,11 @@ bindkey "^[[4~" end-of-line
 
 # directory stack {{{
 export DIRSTACKSIZE=16
-setopt autopushd pushdminus pushdsilent pushdtohome
 alias dh="dirs -v"
 # }}}
 
 #use wx for gnuplot
 export GNUTERM=wxt
-
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

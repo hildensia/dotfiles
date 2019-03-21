@@ -3,7 +3,7 @@
 " This is my .vimrc based on snippets found all over the web. Cudos to all the
 " hackers outside there helping me getting things done the way I like it.
 " Feel free to use. If you have some comments, hints or critics mail me:
-" <kulick -at- inf.fu-berlin.de>
+" <mail -at- johanneskulick -dot- net>
 
 " bundles {{{
 set rtp+=~/.vim/bundle/Vundle.vim

@@ -1,0 +1,30 @@
+[global_config]
+  focus = system
+  title_font = Ubuntu Mono 11
+  title_transmit_bg_color = "#586e75"
+[keybindings]
+  new_tab = <Primary>t
+  next_tab = <Primary>Right
+  prev_tab = <Primary>Left
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#fdf6e3"
+    cursor_color = "#586e75"
+    cursor_color_fg = False
+    font = Monaco 10
+    foreground_color = "#657b83"
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    use_system_font = False
+  [[solarized]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
