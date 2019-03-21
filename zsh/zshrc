@@ -40,3 +40,6 @@ alias dh="dirs -v"
 #use wx for gnuplot
 export GNUTERM=wxt
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

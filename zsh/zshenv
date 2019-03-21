@@ -2,6 +2,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.history
 
+HOSTALIAS='macbook'
+
 #source $XDG_CONFIG_HOME/user-dirs.dirs
 alias ...='../..' 
 alias ....='../../..' 
@@ -12,4 +14,7 @@ alias .......='../../../../../..'
 fpath=($fpath $HOME/.zsh/func)
 typeset -U fpath
 
-PATH=$PATH:/Users/jkkulick/anaconda3/bin
+BRAZIL_CLI_BIN=/apollo/env/SDETools/bin
+PATH=$HOME/.toolbox/bin:$BRAZIL_CLI_BIN:$PATH:/Users/jkkulick/anaconda3/bin:/Users/jkkulick/bin
+
+source /Users/jkkulick/.profile
